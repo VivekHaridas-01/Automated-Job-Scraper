@@ -23,6 +23,8 @@ _Python version >= [3.10](https://www.python.org/downloads/release/python-3100/)
    python app.py
 ```
 
+
+
 ## Demonstration
 
 Below are key sections of the **Automated Job Scraper** with relevant visuals showcasing the interface and functionality.
