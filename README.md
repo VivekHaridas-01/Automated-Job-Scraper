@@ -13,12 +13,10 @@ cd Automated-Job-Scraper
 ```
 pip install -r requirements.txt
 ```
-3. Additionally, install the python-jobspy package:
+3. Additionally, install the python-jobspy package (_Python version >= [3.10](https://www.python.org/downloads/release/python-3100/) required_):
 ```
 pip install -U python-jobspy
 ```
-_Python version >= [3.10](https://www.python.org/downloads/release/python-3100/) required_
-
 4. Launch the application by running the main script:
 ```
    python app.py
