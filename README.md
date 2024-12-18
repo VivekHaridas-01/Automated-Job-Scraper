@@ -18,6 +18,7 @@ pip install -r requirements.txt
 pip install -U python-jobspy
 ```
 _Python version >= [3.10](https://www.python.org/downloads/release/python-3100/) required_
+
 4. Launch the application by running the main script:
 ```
    python app.py
