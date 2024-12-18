@@ -19,4 +19,54 @@ pip install -U python-jobspy
 ```
 _Python version >= [3.10](https://www.python.org/downloads/release/python-3100/) required_
 
-## Usage
+## Demonstration
+
+Below are key sections of the **Automated Job Scraper** with relevant visuals showcasing the interface and functionality.
+
+### 1. Landing Page
+This is the starting page where users can upload their resumes to begin the job scraping process.
+
+![Landing Page](images/1.png)
+
+---
+
+### 2. Preferences Page
+Users can specify their preferences such as **Preferred Job Role** and **Location** to tailor job recommendations.
+
+![Preferences Page](images/2.png)
+
+---
+
+### 3. Interactive Interface
+The job agent provides an interactive experience where users can ask questions and browse recommended jobs.
+
+![Interactive Interface](images/3.png)
+
+---
+
+### 4. Relevant Job Descriptions
+By clicking "View Details" on a job card, users can access a comprehensive job description.
+
+![Relevant Job Descriptions](images/4.png)
+
+---
+
+### 5. Resume Tab
+In the **Resume Tab**, users can view and replace their uploaded resumes.
+
+![Resume Tab](images/5.png)
+
+---
+
+### 6. History of Relevant Jobs
+The **Job History** tab displays previously applied or viewed job recommendations.
+
+![History of Relevant Jobs](images/6.png)
+
+---
+
+### 7. Interaction Example
+An example of a conversation where the agent provides job listings based on the user's query.
+
+![Interaction Example](images/7.png)
+
