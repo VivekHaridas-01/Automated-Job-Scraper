@@ -23,13 +23,37 @@ python app.py
 ```
 
 ## Features
-- Upload a resume to customize job searches based on skills.
-- Filter job listings by preferred role and location.
-- Interactive agent for real-time queries about job recommendations.
-- Access detailed job descriptions with one click.
-- Maintain a history of relevant jobs viewed or applied.
-- Replace the uploaded resume anytime for updated searches.
-- Export job listings in CSV format (if applicable).
+
+1. **Resume Upload and Parsing**
+   - Users can upload their resume in PDF format.
+   - The resume is parsed to extract key details like Name, Skills, Work Experience, Education, and more using OpenAI's GPT model.
+2. **Job Preferences**
+   - Users can specify their preferred job role and location.
+   - These preferences are used to filter and rank job listings tailored to the user's profile.
+3. **Job Listing Aggregation**
+   - Scrapes job listings from multiple platforms (currently using `Indeed`) for the specified job role and location.
+   - Supports fetching up to 1000 jobs at a time and avoids duplicate entries.
+4. **Resume and Job Matching**
+   - Generates embeddings for the uploaded resume and compares them with job descriptions using cosine similarity.
+   - Ranks job listings based on their relevance to the resume and user preferences.
+5. **Interactive Dashboard**
+   - Displays ranked job recommendations along with detailed descriptions.
+   - Allows users to save jobs to a history for future reference.
+6. **Job History**
+   - Maintains a record of viewed and saved jobs, ensuring no duplicate entries.
+   - Users can revisit previously recommended jobs anytime.
+7. **Resume Replacement**
+   - Users can replace their uploaded resume and trigger a re-ranking of job listings based on the new resume.
+8. **Chat Assistant**
+   - Provides a conversational interface to interact with the job recommendations and resume insights.
+   - Answers queries about specific jobs, career advice, and updates search preferences dynamically.
+9. **Data Management**
+   - Job listings are saved locally in CSV format for easy access and management.
+   - Ensures the file size remains optimal by truncating older job entries.
+10. **Asynchronous Processing**
+    - Scraping and matching operations run in the background to avoid delays in the user experience.
+11. **Scalable Design**
+    - The modular architecture ensures easy integration with additional job platforms and enhancements.
 
 ## Demonstration
 
@@ -88,3 +112,7 @@ An example of a conversation where the agent provides job listings based on the 
 - Cleaner UI and output display
 - Apply to jobs directly from the UI. Integrate job application history.
 - Integrate Scraping from other websites like LinkedIn without limit.
+
+## References
+- [JobSpy Github Repository](https://github.com/Bunsly/JobSpy/)
+- [OpenAI API](https://openai.com/api/)
